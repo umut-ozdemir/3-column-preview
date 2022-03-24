@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button{
+ font-family: "Lexend Deca", sans-serif;  
+}
+
+h1{
+    font-family: "Big Shoulder Display";
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);    
+}
+.container{
+    padding: 20px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border-radius: 0 0 10px 10px;
+}
+
+.btn{
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sedans .btn{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .btn{
+    color: hsl(184, 100%, 22%);
+}
+.luxury .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.card{
+    padding:  30px;
+}
+.card h1{
+    margin-bottom: 20px;;
+}
+.card svg{
+    margin-bottom: 20px;
+}
+.card p{
+    margin-bottom: 20px;
+}
+
+@media (min-width: 700px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+    .luxury{
+        border-radius: 0 10px 10px 0;
+    }
+    .card p{
+        margin-bottom: 80px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
